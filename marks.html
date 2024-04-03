@@ -51,63 +51,18 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
-              </div></div> <ul>
-            <h1>List Of TOUR Packages : </h1>
-            <li> GUJ 
-            </li>
-            <li>GOA</li>
-            <li>LAKSHADWEEP</li>
-            <li>VADODARA</li>
-            <li>BENGALURU</li>
-            <section>
-                <div class="body1">
-                    <div class="city1">
-                        GUJ :
-                        <select id="GUJ" onchange="jfun1()">
-                            <option>Select Package Type:</option>
-                            <option>Rajkot</option>
-                            <option>Surat</option>
-                            <option>AHM</option>
-                        </select>
-                        <br>
-                        <br>
-                        <div id="selectedCityDisplay">Selected City: <span id="selectedCity"></span></div>
-                </div>
-                <div id="selectedCityDisplay">
-                  
-                </div>
-            </section>
-           
-        </ul></section>
-        <section>
-            <div class="card1">
-                <h1>Some of the other important courses : </h1>
-                <div class="card" style="width: 18rem; margin: 10px;">
-                    <img src="images/goa.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">GOA</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-                  <div class="card" style="width: 18rem; margin: 10px;">
-                    <img src="images/LAKSHADWEEP.avif" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">LAKSHADWEEP</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-                  <div class="card" style="width: 18rem; margin: 10px;">
-                    <img src="images/VADODARA.avif" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">VADODARA</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="marks.html" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-            </div>
-        </section>
+              </div></div>
+              <form method="post" onsubmit="calculateMarks()">
+                <label for="mcq">Choose one:</label><br>
+                <input type="radio" id="CSE" name="mcq" value="CSE">
+                <label for="CSE">CSE</label><br>
+                <input type="radio" id="ME" name="mcq" value="ME">
+                <label for="ME">ME</label><br>
+                <input type="radio" id="CHEM" name="mcq" value="CHEM">
+                <label for="CHEM">CHEM</label><br>
+                <input type="submit" value="Submit">
+              </form>
+              
 <footer class="text-center text-lg-start bg-body-tertiary text-muted" style="background-color: rgb(25, 25, 133); color: gainsboro;" >
 
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="background-color: rgb(25, 25, 133); color: gainsboro;" ">
