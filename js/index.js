@@ -39,3 +39,20 @@ function calculateMarks() {
         alert("Please select an option.");
     }
 }
+function jfun2() {
+    var name = document.frm.name.value;
+    var phnum = document.frm.PhoneNumber.value;
+    var email = document.frm.Email.value;
+    var gender = document.querySelector('input[name="gender"]:checked').value;
+    var course = document.frm.course.value;
+    var skillsList = [];
+    var skillsCheckboxes = document.querySelectorAll('input[name="Skills"]:checked');
+    skillsCheckboxes.forEach(function(checkbox) {
+        skillsList.push(checkbox.value);
+    });
+    var skills = skillsList.join(", ");
+    
+    var remark = document.frm.message.value;
+    
+    alert("Name: " + name + "\nPhoneNumber: " + phnum + "\nEmail: " + email + "\nGender: " + gender + "\nCourse: " + course + "\nSkills: " + skills + "\nRemarks: " + remark);
+}

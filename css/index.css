@@ -38,9 +38,15 @@ footer nav {
 
 .image-container {
     margin: 10px;
-}img 
+}.carousel-inner img 
 {
     width: 1020px;
+    height: 250px;
+    object-fit: cover;
+}
+img 
+{
+    width: 350px;
     height: 250px;
     object-fit: cover;
 }
@@ -83,4 +89,14 @@ footer nav {
     text-align: center; /* Center the content */
     margin-top: 10px; /* Adjust the margin as needed */
 }
-    
+form {
+    border: 2px solid gray;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 1em;
+    width: 400px;
+    margin: 0 auto;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
