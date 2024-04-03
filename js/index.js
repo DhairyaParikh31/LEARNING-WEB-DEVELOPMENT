@@ -11,32 +11,29 @@ function jfun1(){
 
 }
 function calculateMarks() {
+    event.preventDefault(); 
     var selectedOption = document.querySelector('input[name="mcq"]:checked');
-
+    var marksDisplay = document.getElementById('marksDisplay');
+    var marks = 0;
     if (selectedOption) {
-        var marks = 0;
-
-        // Assign marks based on the selected option
+        
         switch (selectedOption.value) {
-            case "CSE":
-                marks = 10; // Assigning 10 marks for CSE option
+            case "vad":
+                marks = 500;
                 break;
-            case "ME":
-                marks = 8; // Assigning 8 marks for ME option
+            case "srt":
+                marks = 800;
                 break;
-            case "CHEM":
-                marks = 6; // Assigning 6 marks for CHEM option
+            case "ahmd":
+                marks = 750; 
                 break;
             default:
-                marks = 0; // Default case if no option is selected
+                marks = 0; 
                 break;
         }
-
-        // Display the marks
-        alert("You got " + marks + " marks.");
+        marksDisplay.textContent = "Price for selected city: " + marks + " $";
     } else {
-        // If no option is selected
-        alert("Please select an option.");
+        marksDisplay.textContent = "Please select an option.";
     }
 }
 function jfun2() {

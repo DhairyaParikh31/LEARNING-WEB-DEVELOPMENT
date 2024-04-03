@@ -16,6 +16,7 @@
         <nav>
             <nav>
                 <a href="./contact.html" >Contact Us</a>
+                <a href="./marks.html" >Pricing</a>
                 <a href="./registration.html" >Registration</a>
                 <a href="./gallery.html" >Gallery</a>
                 <a href="./index.html">Home</a>
@@ -51,17 +52,17 @@
                   <span class="sr-only">Next</span>
                 </a>
               </div></div>
-              <form method="post" onsubmit="calculateMarks()">
+              <form onsubmit="calculateMarks()">
                 <label for="mcq">Choose one:</label><br>
-                <input type="radio" id="CSE" name="mcq" value="CSE">
-                <label for="CSE">CSE</label><br>
-                <input type="radio" id="ME" name="mcq" value="ME">
-                <label for="ME">ME</label><br>
-                <input type="radio" id="CHEM" name="mcq" value="CHEM">
-                <label for="CHEM">CHEM</label><br>
+                <input type="radio" id="vad" name="mcq" value="vad">
+                <label for="vad">Vadodara</label><br>
+                <input type="radio" id="srt" name="mcq" value="srt">
+                <label for="srt">Surat</label><br>
+                <input type="radio" id="ahmd" name="mcq" value="ahmd">
+                <label for="ahmd">Ahmedabad</label><br>
                 <input type="submit" value="Submit">
               </form>
-              
+              <div id="marksDisplay" style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: 20px; font-size: 35px;"><span> Price for selected city: <span id="mcq"></span></div>
 <footer class="text-center text-lg-start bg-body-tertiary text-muted" style="background-color: rgb(25, 25, 133); color: gainsboro;" >
 
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="background-color: rgb(25, 25, 133); color: gainsboro;" ">
