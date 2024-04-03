@@ -53,3 +53,6 @@ function jfun2() {
     
     alert("Name: " + name + "\nPhoneNumber: " + phnum + "\nEmail: " + email + "\nGender: " + gender + "\nCourse: " + course + "\nSkills: " + skills + "\nRemarks: " + remark);
 }
+function showVideoPopup() {
+    $('#videoModal').modal('show');
+}

@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="css/index.css">
 <script src="js/index.js"></script>
 </head>
-<body>
+<body onload="showVideoPopup()">
     <header>  
         <nav>
             <nav>
@@ -108,6 +108,24 @@
                   </div>
             </div>
         </section>
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">How to use our site</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560px" height="750px" src="https://www.youtube.com/embed/_9pKAG_XabM?si=Sz033SxDLBMtYic-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
 <footer class="text-center text-lg-start bg-body-tertiary text-muted" style="background-color: rgb(25, 25, 133); color: gainsboro;" >
 
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="background-color: rgb(25, 25, 133); color: gainsboro;" ">
